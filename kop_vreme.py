@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup as bs
 import requests
-
+from pprint import pprint
 
 class Kop_vreme():
 
@@ -34,7 +34,7 @@ class Kop_vreme():
                 data[datum]=temp
             except IndexError:
                 pass
-        print(data)
+        pprint(data)
 
 if __name__=="__main__":
     c = Kop_vreme()
